@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import instaloader
 
 L = instaloader.Instaloader()
-L.login(INSTAGRAM_USERNAME, INSTAGRAM_PASSWORD)
+# L.login(INSTAGRAM_USERNAME, INSTAGRAM_PASSWORD)
 
 def send_email(email, body):
     try:
@@ -42,7 +42,7 @@ def get_posts_within_interval(username, start, end):
             continue
         if post.date < start:
             break
-        L.download_post(post, username)
+        # L.download_post(post, username)
         recent_posts.append(post)
 
     return recent_posts
@@ -50,7 +50,6 @@ def get_posts_within_interval(username, start, end):
 if __name__ == '__main__':
     creators = [
         'bamlionheart',
-        'delallo_methods',
         'pro_golfer',
         'rishfits'
     ]
