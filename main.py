@@ -66,7 +66,7 @@ if __name__ == '__main__':
     for creator in post_dict:
         msg += f'{creator} has {len(post_dict[creator])} new post(s)\n'
         msg += '\n\n'
-        msg += '\n'.join(map(lambda p: f'{p.caption}\n\n{p.video_url}' if p.video_url else f'{p.caption}\n\n{p.url}', post_dict[creator]))
+        msg += '\n'.join(map(lambda p: f'{p.caption}\n\n{p.video_url}\n' if p.video_url else f'{p.caption}\n\n{p.url}\n', post_dict[creator]))
         msg += '\n\n'
 
     send_email('rajitskhanna@gmail.com', msg)
