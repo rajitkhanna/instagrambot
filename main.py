@@ -1,9 +1,17 @@
 import boto3
 from botocore.exceptions import ClientError
-from env import AWS_ACCESS_KEY, AWS_SECRET_ACCESS_KEY, AWS_REGION, SES_EMAIL_SOURCE, \
-    INSTAGRAM_USERNAME, INSTAGRAM_PASSWORD
+from dotenv import load_dotenv
 from datetime import datetime, timedelta
 import instaloader
+import os
+
+load_dotenv()
+AWS_ACCESS_KEY = os.getenv('AWS_ACCESS_KEY')
+AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
+SES_EMAIL_SOURCE = os.getenv('SES_EMAIL_SOURCE')
+AWS_REGION = os.getenv('AWS_REGION')
+INSTAGRAM_USERNAME = os.getenv('INSTAGRAM_USERNAME')
+INSTAGRAM_PASSWORD = os.getenv('INSTAGRAM_PASSWORD')
 
 L = instaloader.Instaloader()
 L.login(INSTAGRAM_USERNAME, INSTAGRAM_PASSWORD)

@@ -1,0 +1,7 @@
+services:
+  instagrambot:
+    env_file: .env
+    container_name: instagrambot
+    build:
+      context: .
+      dockerfile: Dockerfile
