@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import instaloader
 
 L = instaloader.Instaloader()
-# L.login(INSTAGRAM_USERNAME, INSTAGRAM_PASSWORD)
+L.login(INSTAGRAM_USERNAME, INSTAGRAM_PASSWORD)
 
 def send_email(email, body):
     try:
@@ -51,7 +51,8 @@ if __name__ == '__main__':
     creators = [
         'bamlionheart',
         'pro_golfer',
-        'rishfits'
+        'rishfits',
+        'delallo_methods'
     ]
 
     end = datetime.now()
