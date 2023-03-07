@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.rajitkhanna.instagrambot</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/rajitkhanna/.local/share/virtualenvs/instagrambot-3b8aT05g/bin/python</string>
+        <string>/Users/rajitkhanna/Github/instagrambot/main.py</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>8</integer>
+        <key>Minute</key>
+        <integer>15</integer>
+        <key>Weekday</key>
+        <integer>4</integer>
+    </dict>
+</dict>
+</plist>
