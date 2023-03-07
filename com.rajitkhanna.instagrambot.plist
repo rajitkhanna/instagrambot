@@ -18,5 +18,9 @@
         <key>Weekday</key>
         <integer>4</integer>
     </dict>
+    <key>StandardOutPath</key>
+    <string>/Users/rajitkhanna/Github/instagrambot/log/out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/rajitkhanna/Github/instagrambot/log/error.log</string>
 </dict>
 </plist>
